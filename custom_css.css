@@ -1,0 +1,30 @@
+// Common styles
+
+#signature_nav {
+    font-family: "Segoe Script", Times, serif;
+    color: #d0d0d0;
+}
+
+#signature_nav:hover {
+    color: white;
+}    
+
+.primary-bg {
+    background-color: #757575;
+}
+
+.primary-color {
+    color: #e0e0e0;
+}
+
+.nav-item {
+    padding: 10px;
+}
+
+a:hover {
+    color: white;
+}
+
+.active {
+    border-bottom: 5px solid #e0e0e0;
+}
