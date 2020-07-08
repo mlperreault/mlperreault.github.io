@@ -1,28 +1,251 @@
-#signature_nav {
-    font-family: "Segoe Script", Times, serif;
-    color: #d0d0d0;
+@font-face {
+    font-family: "OpenSansCondensed";
+    src: url("fonts/Open_Sans_Condensed/OpenSansCondensed-Light.ttf");
+}
+.primary-bg {
+    background-color: #546e7a;
 }
 
-#signature_nav:hover {
-    color: white;
-}    
-
-.primary-bg {
-    background-color: #757575;
+.primary-bg-dark {
+	background-color: #29434e;
+}
+ 
+.primary-bg-light {
+	background-color: #819ca9;
 }
 
 .primary-color {
-    color: #e0e0e0;
+    color: #546e7a;
+}
+
+.primary-color-dark {
+	color: #29434e;
+}
+ 
+.primary-color-light {
+	color: #819ca9;
+}
+
+.secondary-color {
+	color:#961212;
+}
+
+.secondary-color-dark {
+	color:#620000;
+}
+
+.secondary-color-light {
+	color:#cd4a3a;	
+}
+
+.secondary-bg {
+    background-color:#961212;
+}
+
+.secondary-bg-dark {
+	background-color: #620000;
+}
+ 
+.secondary-bg-light {
+	background-color: #cd4a3a;
+}
+
+#nav-logo {
+	height:100px;
 }
 
 .nav-item {
-    padding: 10px;
+	font-size:1.5em;
+	padding-left:10px;
+	padding-right:10px;
+	font-family:'OpenSansCondensed';
 }
 
-a:hover {
-    color: white;
+nav .navbar-nav li a{
+  color: white !important;
 }
 
-.active {
-    border-bottom: 5px solid #e0e0e0;
+nav .navbar-nav li a:hover{
+  color: #819ca9 !important;
 }
+
+.banner {
+	 background-image: url("logos/olivier-maurice-drapeau.jpg");
+	 height:500px;
+	 background-repeat: no-repeat;
+	 background-size: 100%;
+}
+
+.map_banner {
+	 background-image: url("logos/map_bg.jpg");
+	 height:600px;
+	 background-repeat: no-repeat;
+	 background-size: 150%;
+}
+
+.banner_grey {
+	background: rgba(129,156,164,0.5);
+	height: 100%;
+}
+
+.first_banner {
+	padding-top:10%;
+}
+
+#banner_text_white {
+	color:white;
+	font-weight:bold;
+	font-size:2.75em;
+	text-shadow: 2px 2px 2px #620000;
+}
+
+#banner_text_red {
+	font-weight:bold;
+	font-size:2.75em;
+	text-shadow: 2px 2px 2px white;
+}
+
+.home_header_text_grey {
+	font-size:2.5em;
+	font-weight:bold;
+	font-family: 'OpenSansCondensed';
+}
+
+.home_header_text_red {
+	font-size:2.5em;
+	font-weight:bold;
+	font-family: 'OpenSansCondensed';
+}
+
+.w80 {
+	width:80%;
+}
+
+.w40 {
+	width:40%;
+}
+
+.home_header_text {
+	font-size:2em;
+	margin:3%;
+}
+
+.card-img {
+	height: 75%;
+}
+
+.card-body {
+	color:white;
+	font-size:2em;
+	font-weight:bold;
+	text-align:center;
+}
+
+.flip-scene {
+  width: 100%;
+  height:100%;
+  background:transparent;
+}
+
+.flip-card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+  border:2px solid white;
+  border-radius:5px;
+}
+
+.flip-card-face {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+}
+
+.card-face-front {
+	color:white;
+	font-size:2em;
+	font-weight:bold;
+	text-align:center;
+	border-radius: 5px;
+}
+
+.card-face-back {
+  background-color:white;
+  transform: rotateY( 180deg );
+  border-radius: 5px;
+    border:2px solid black;
+}
+
+.back-face-title {
+	font-size:2em;
+	font-weight:bold;
+	font-family: 'OpenSansCondensed';
+}
+
+.back-face-subtitle {
+	font-size:1em;
+	font-weight:bold;
+}
+
+.back-face-text {
+	font-size: 1em;
+	font-style:italic;
+	color:#29434e;
+}
+.flip-card.flip-card-flipped {
+  transform: rotateY(180deg);
+}
+
+.btn-primary-dark{
+	color:white;
+	background-color: #29434e;
+}
+ 
+.btn-primary-dark:hover {
+	background-color: #819ca9;
+}
+
+.change_text{
+	font-size:0.75em;
+}
+
+.sword_banner {
+	 background-image: url("logos/sword_bg.jpg");
+	 height:1000px;
+	 background-repeat: no-repeat;
+	 background-size: 200%;
+	 font-size:1em;
+	 background-position: top-left;
+}
+
+.offcanvas-header{ display:none; }
+
+@media (max-width: 992px) {
+  .offcanvas-header{ display:block; }
+  .navbar-collapse {
+    position: fixed;
+    top:0; 
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  }
+  .navbar-collapse.show {
+    visibility: visible;
+    transform: translateX(-100%);
+  }
+  #nav_logo_link{
+	  display:none;
+  }
+	
+}
+
+

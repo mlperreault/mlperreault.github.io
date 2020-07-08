@@ -1,56 +1,269 @@
-﻿<!-- 
+<!-- 
     Author : Michael Perreault
-    Creation Date : 2020-06-14
+    Creation Date : 2020-06-25
+	Disclaimer : The web site is the property of GoPyrate!.
+				 Michael Perreault has the right to keep a copy of the code for his github to show to job recruiters.
 -->
 <!doctype html>
 <html>
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Michael Perreault - C.V</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/fa0cce3016.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="custom_css.css">
-    
-</head>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>GoPyrate!</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://kit.fontawesome.com/fa0cce3016.js" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="custom_css.css">
+		
+	</head>
 
     <body>
         
         <!-- Navigation bar -->
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a class="navbar-brand" id="signature_nav" href="index.html">Michael L.Perreault</a>
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">
-                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                        C.V
-                    </a>
-                </li>
-            </ul>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="float-right" href="https://www.linkedin.com/in/michael-perreault-ab1034152/"><i class="fab fa-2x fa-linkedin"></i></a>
-                </li>
-            </ul>
-        </nav>
+		<nav class="navbar navbar-expand-lg navbar-dark primary-bg-dark">
+		  <button class="navbar-toggler" type="button" data-trigger="#main_nav">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="navbar-collapse primary-bg-dark" id="main_nav">
+			<div class="offcanvas-header mt-3">  
+			  <button class="btn btn-close float-right secondary-bg-light secondary-color-dark"> &times Close </button>
+			</ul>
+			</div>
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">
+							Qui sommes nous?
+						</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="formationDropDownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  Formations
+						</a>
+						<ul class="dropdown-menu primary-bg-dark" aria-labelledby="formationDropDownMenuLink">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html"><i class="fa fa-users" aria-hidden="true"></i> Entreprises</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="index.html"><i class="fa fa-user" aria-hidden="true"></i> Particuliers</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				
+				<a class="navbar-brand" href="index.html" id="nav_logo_link">
+					<img class="img-fluid" id="nav-logo" src="logos/Icon_transparent.png" />
+				</a>
+				
+				
+					
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="formationDropDownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  Contenu Gratuit
+						</a>
+						<ul class="dropdown-menu primary-bg-dark" aria-labelledby="formationDropDownMenuLink">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html"><i class="fa fa-book-open mr-1" aria-hidden="true"></i> Blogue</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="index.html"><i class="fa fa-microphone mr-1" aria-hidden="true"></i> Podcast</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="index.html"><i class="fa fa-youtube-play mr-1" aria-hidden="true"></i> Youtube </a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">
+							Nous contacter
+						</a>
+					</li>
+				</ul>
+			</div> <!-- navbar-collapse.// -->
+		</nav>
         <!-- END Navigation bar -->
 
         <!-- Page Content -->
-        <div class="container-fluid mt-2">
-            <div class="row">
-                <div class="col">
-                </div>
-                <div class="col-6">
-                    <div class="alert alert-danger d-flex justify-content-center align-items-center" role="alert">
-                        <i class="fa fa-exclamation-circle" aria-hidden="true"></i> Ce C.V sous format PDF n'est pas visible sur un appareil mobile.
-                    </div>
-                </div>
-                <div class="col">
-                </div>
-            </div>
-            
-            <embed class="container-fluid" width="100%" height="1400px" src="Michael-L.Perreault.pdf" type="application/pdf" />
-        </div>
+        <div class="w-100">
+			<div class="w-100 banner parallax">
+				<div class="first_banner banner_grey w-100 container-fluid d-flex justify-content-center align-items-top">
+					<div class="d-flex flex-column">
+					  <div class="p-2">
+						<span id="banner_text_white">Reforger les entreprises au Québec</span>
+					  </div>
+					  <div class="p-2 d-flex justify-content-center align-items-top">
+						<span id="banner_text_red" class="secondary-color-light">une mutinerie à la fois.</span>
+					  </div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="w-100 d-flex justify-content-center pt-5">
+				<div class="primary-color-dark home_header_text_grey mr-1">Mutinez-vous contre le</div> <div class="ml-1 secondary-color-light home_header_text_red">comment on a toujours fait</div>
+			</div>
+			
+			<div class="w-100 d-flex justify-content-center pt-4">
+				<div class="w80 d-flex text-justify home_header_text primary-color-light">
+					<p>Nous éduquons une nouvelle génération d’agents de changement. Nous les équipons pour qu’ils soient en mesure de faire des transformations progressistes sans nécessairement en avoir le mandat.</p>
+				</div>
+			</div>
+			
+			<div class="w-100 map_banner parallax">
+				<div class="banner_grey w-100 d-flex">
+						<div class='d-flex flex-column w40 m-auto justify-content-center h-75 pt-3 pb-3'>
+							<div class="flip-scene">
+								<div class="flip-card">
+									<div class="flip-card-face card-face-front primary-bg-light">
+										<img class="card-img-top card-img" src="https://gopyrate.com/wp-content/uploads/2020/06/atelier1.png" alt="Card image cap">
+										<div class="d-flex justify-content-center align-items-center h-25">
+											<p class="card-text text-white">Equipage Corsaire</p>
+										</div>
+									</div>
+									<div class="d-flex flex-column justify-content-start align-items-center flip-card-face card-face-back primary-bg-light">
+										<div class="back-face-title p-3 secondary-color-light">Atelier pour entreprises</div>
+										<div class="back-face-subtitle p-1 primary-color-dark">AGENTIVITÉ, RELATIONS GESTIONNAIRE-ÉQUIPE, PERFORMANCE.</div>
+										<div class="d-flex flex-column pt-5 pb-5 p-3 align-items-center">
+											<div class="back-face-text">Théorie organisationelle appliquée.</div>
+											<div class="back-face-text">Mise en pratique personnalisée.</div>
+											<div class="back-face-text">Humour et pyrateries.</div>
+										</div>
+										<div class="m-auto"><button class="btn btn-primary-dark p-3">Voir l'atelier</button></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='d-flex flex-column w40 m-auto justify-content-center h-75 pt-3 pb-3'>
+							<div class="flip-scene">
+								<div class="flip-card">
+									<div class="flip-card-face card-face-front primary-bg-light">
+										<img class="card-img-top card-img" src="https://gopyrate.com/wp-content/uploads/2020/06/atelier2.jpg" alt="Card image cap">
+										<div class="d-flex justify-content-center align-items-center h-25">
+											<p class="card-text text-white">Devenir Pyrate</p>
+										</div>
+									</div>
+								
+									<div class="d-flex flex-column justify-content-start align-items-center flip-card-face card-face-back primary-bg-light">
+										<div class="back-face-title p-3 secondary-color-light">Atelier pour particuliers</div>
+										<div class="back-face-subtitle p-1 primary-color-dark">DEVENIR UN AGENT DE CHANGEMENT SANS PERDRE SON EMPLOI</div>
+										<div class="d-flex flex-column pt-5 pb-5 p-3 align-items-center">
+											<div class="back-face-text">Un coaching décidément pyrate.</div>
+											<div class="back-face-text">8 semaines de vidéos et rencontres virtuelles.</div>
+											<div class="back-face-text">Accès à vie à notre communauté.</div>
+											<div class="back-face-text">Augmentation de votre impact et influence!</div>
+										</div>
+										<div class="m-auto"><button class="btn btn-primary-dark p-3">Voir l'atelier</button></div>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+			
+			<div class="w-100 d-flex justify-content-center pt-5">
+				<div class="primary-color-dark home_header_text_grey mr-1">Les</div> <div class="ml-1 mr-1 secondary-color-light home_header_text_red">changements</div><div class="primary-color-dark home_header_text_grey mr-1 ml-1">d'une entreprise</div><div class="ml-1 mr-1 secondary-color-light home_header_text_red">progressiste</div>
+			</div>
+			
+			<div class="w-100 d-flex justify-content-center pt-4">
+				<div class="w80 d-flex flex-column align-items-center home_header_text primary-color-light">
+					<div class="change_text p-2">D’un focus sur les profits vers un focus sur les valeurs et la raison d’être.</div>
+					<div class="change_text p-2">Des pyramides hiérarchiques vers un réseau d’équipes organisé en réseau.</div>
+					<div class="change_text p-2">D’un leadership directif vers un leadership supportif</div>
+					<div class="change_text p-2">D’une planification prédictive vers les expériences délibérées et l’adaptation .</div>
+					<div class="change_text p-2">Des règles et du contrôle vers la liberté de travail et la confiance.</div>
+					<div class="change_text p-2">De l’autorité centralisée vers l’autorité distribuée.</div>
+					<div class="change_text p-2">Du secret et du contrôle de l’information vers la transparence radicale.</div>
+					<div class="change_text p-2">Des descriptions de poste statiques vers les rôles dynamiques basés sur le talent et la maîtrise.</div>
+					<div class="change_text p-2">Du volume de travail et des heures travaillées vers la valeur du travail et l’impact des résultats.</div>
+				</div>
+			</div>
+			
+			<div class="w-100 sword_banner parallax">
+				<div class="banner_grey w-100 d-flex flex-column">
+				
+						<div class='d-flex justify-content-center h-100'>
+						
+							<div class="flip-scene p-5">
+								<div class="flip-card">
+									<div class="flip-card-face card-face-front primary-bg-light">
+										<img class="card-img-top card-img" src="https://gopyrate.com/wp-content/uploads/2020/04/image-podcast-900x600.jpg" alt="Card image cap">
+										<div class="d-flex justify-content-center align-items-center h-25">
+											<p class="card-text text-white">Go Pyrate!, le Podcast</p>
+										</div>
+									</div>
+									<div class="d-flex flex-column justify-content-start align-items-center flip-card-face card-face-back primary-bg-light">
+										<div class="back-face-title p-3 secondary-color-light">Go Pyrate!, le Podcast</div>
+										<div class="d-flex flex-column p-4 align-items-center">
+											<div class="back-face-text">Mutinez-vous contre le « comment on a toujours fait », et voyez comment les entreprises progressistes changent la donne et trouvent le succès en suivant leur propres règles comme de vrais Pyrates!</div>
+										</div>
+										<div class="m-auto"><button class="btn btn-primary-dark p-2"><i class="fa fa-microphone mr-1"> </i>Écouter notre podcast</button></div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="flip-scene p-5">
+								<div class="flip-card">
+									<div class="flip-card-face card-face-front primary-bg-light">
+										<img class="card-img-top card-img" src="https://gopyrate.com/wp-content/uploads/2020/01/desk-2859083_1920-1030x687.jpg" alt="Card image cap">
+										<div class="d-flex justify-content-center align-items-center h-25">
+											<p class="card-text text-white">Go Pyrate!, le Blogue</p>
+										</div>
+									</div>
+									<div class="d-flex flex-column justify-content-start align-items-center flip-card-face card-face-back primary-bg-light">
+										<div class="back-face-title p-3 secondary-color-light">Go Pyrate!, le Blogue</div>
+										<div class="d-flex flex-column p-4 align-items-center">
+											<div class="back-face-text">Des articles pour accompagner notre podcast, vous permettant de mettre en application la théorie discutée dans nos épisodes.</div>
+										</div>
+										<div class="m-auto"><button class="btn btn-primary-dark p-2"><i class="fa fa-book-open mr-1"></i>Visiter notre blog</button></div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						
+						<div class='d-flex justify-content-center h-100'>
+						
+							<div class="flip-scene p-5">
+								<div class="flip-card">
+									<div class="flip-card-face card-face-front primary-bg-light">
+										<img class="card-img-top card-img" src="https://gopyrate.com/wp-content/uploads/2020/05/youtube-900x767.jpg" alt="Card image cap">
+										<div class="d-flex justify-content-center align-items-center h-25">
+											<p class="card-text text-white">Go Pyrate!, sur Youtube</p>
+										</div>
+									</div>
+									<div class="d-flex flex-column justify-content-start align-items-center flip-card-face card-face-back primary-bg-light">
+										<div class="back-face-title p-3 secondary-color-light">Go Pyrate!, sur Youtube</div>
+										<div class="d-flex flex-column p-4 align-items-center">
+											<div class="back-face-text">Sur notre chaîne YouTube, vous trouverez nos épisodes de podcast, nos chroniques <b>Pyratise Ta Vie, La Bouquinerie Du Pyrate, Cocktail avec des Pyrates.</b></div>
+										</div>
+										<div class="m-auto"><button class="btn btn-primary-dark p-2"><i class="fa fa-youtube-play mr-1" aria-hidden="true"></i>Visiter notre chaîne Youtube</button></div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="flip-scene p-5">
+								<div class="flip-card">
+									<div class="flip-card-face card-face-front primary-bg-light">
+										<img class="card-img-top card-img" src="https://gopyrate.com/wp-content/uploads/2020/05/william-iven-jrh5lAq-mIs-unsplash-900x598.jpg" alt="Card image cap">
+										<div class="d-flex justify-content-center align-items-center h-25">
+											<p class="card-text text-white">Go Pyrate!, les Sondages</p>
+										</div>
+									</div>
+									<div class="d-flex flex-column justify-content-start align-items-center flip-card-face card-face-back primary-bg-light">
+										<div class="back-face-title p-3 secondary-color-light">Go Pyrate!, les Sondages</div>
+										<div class="d-flex flex-column p-4 align-items-center">
+											<div class="back-face-text">Nous effectuons des sondages pour récolter votre avis, connaître votre réalité, ou récolter des anecdotes en lien avec votre expérience au travail.</div>
+										</div>
+										<div class="m-auto"><button class="btn btn-primary-dark p-2"><i class="fa fa-bar-chart mr-1" aria-hidden="true"></i>Voir les sondages en cour</button></div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						
+				</div>
+			</div>
+			
+		</div>
         <!-- END Page Content -->
         
         
@@ -59,5 +272,48 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    </body>
+		<script>
+			$("[data-trigger]").on("click", function(){
+				var trigger_id =  $(this).attr('data-trigger');
+				$(trigger_id).toggleClass("show");
+				$('body').toggleClass("offcanvas-active");
+			});
+
+			// close button 
+			$(".btn-close").click(function(e){
+				$(".navbar-collapse").removeClass("show");
+				$("body").removeClass("offcanvas-active");
+			}); 
+		
+			function checkVisible(elm) {
+			  var rect = elm.getBoundingClientRect();
+			  var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+			  return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+			}
+			
+			var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
+			console.log("START SCROLL STOP :");
+			console.log(scrollTop);
+			
+			window.onscroll = function() {onScroll()};
+			
+			function onScroll(){
+				new_scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
+				$(".parallax").each(function(){
+					el = this;
+					if(checkVisible(el)){
+						$(el).css('background-position-y', -(new_scroll*0.10));
+					}
+				});
+			};
+			
+			$(".flip-scene").mouseover( function(){
+				$(this).find(".flip-card").addClass("flip-card-flipped");
+			});
+			
+			$(".flip-scene").mouseout ( function(){
+				$(this).find(".flip-card").removeClass("flip-card-flipped");
+			});
+		</script>
+	</body>
 </html>
