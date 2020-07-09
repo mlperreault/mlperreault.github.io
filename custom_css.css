@@ -86,6 +86,10 @@ nav .navbar-nav li a:hover{
 .banner_grey {
 	background: rgba(129,156,164,0.5);
 	height: 100%;
+	
+   -moz-box-shadow:    inset 0 0 25px #000000;
+   -webkit-box-shadow: inset 0 0 25px #000000;
+   box-shadow:         inset 0 0 25px #000000;
 }
 
 .first_banner {
@@ -220,6 +224,51 @@ nav .navbar-nav li a:hover{
 	 background-size: 200%;
 	 font-size:1em;
 	 background-position: top-left;
+}
+
+.tendancy_panel {
+	background: rgba(129,156,164,0.25);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	z-index: -2;
+	font-family:'OpenSansCondensed';
+}
+
+.tendancy_text_good {
+	font-size:1.5em;
+	font-weight:bold;
+}
+
+.tendancy_text_bad {
+	font-size:1.5em;
+	font-weight:bold;
+}
+
+.tendancy_to {
+	font-size:3em;
+	font-weight:bold;
+	opacity:0.5;
+}
+.tendancy_sign_bad {
+	font-size:4em;
+}
+
+.tendancy_sign_good {
+	font-size:4em;
+}
+
+.tendancy_number {
+	position:absolute;
+	font-size:20em;
+	color:white;
+	z-index: -1;
+}
+
+.w33 {
+	width:30%;
+}
+
+.h30 {
+	height:30%;
 }
 
 .offcanvas-header{ display:none; }
